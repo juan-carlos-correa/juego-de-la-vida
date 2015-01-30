@@ -9,7 +9,7 @@
 var celulas_x= new Array(50);	
 
 //matriz auxiliar
-var celulas_x2= new Array(50);	
+//var celulas_x2= new Array(50);	
 
 
 var sum=0;
@@ -74,6 +74,7 @@ function imprimir_celulas(array){
  
 //Aplicar leyes de la vida
 function leyes_vida(){
+	celulas_x2= new Array(50);
 	for(i=0;i<50;i++){
 		celulas_y2= new Array(50);
 		for(j=0;j<50;j++){
@@ -139,5 +140,5 @@ function evaluar(x,y,m,value,sum2){
 function inicio(){
 	tablero();
 	leyes_vida();
-	imprimir_celulas();
+	imprimir_celulas(celulas_x);
 }
